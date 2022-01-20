@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "75b2600c-0e1b-4937-87f5-cf3020d42cde",
+		"name": "aca-sprint4-meeting56-docker2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "tutorials",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6868/api/tutorials/published",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6868",
+					"path": [
+						"api",
+						"tutorials",
+						"published"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tutorials create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Prueba 2\",\n    \"description\": \"description\",\n    \"published\": true \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6868/api/tutorials/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6868",
+					"path": [
+						"api",
+						"tutorials",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
